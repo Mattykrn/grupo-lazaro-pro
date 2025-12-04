@@ -1,6 +1,6 @@
+import Inicio from "./pages/Inicio"
 import { Routes, Route } from "react-router-dom"
 import Layout from "./components/Layout"
-import Inicio from "./pages/Inicio"
 import Testimonios from "./pages/Testimonios"
 import Apoyo from "./pages/Apoyo"
 import Noticias from "./pages/Noticias"
