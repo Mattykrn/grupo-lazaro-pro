@@ -1,11 +1,11 @@
-import Inicio from "./pages/Inicio"
+import Inicio from "./pages/inicio"
 import { Routes, Route } from "react-router-dom"
 import Layout from "./components/Layout"
-import Testimonios from "./pages/Testimonios"
+import Testimonios from "./pages/testimonios"
 import Apoyo from "./pages/Apoyo"
-import Noticias from "./pages/Noticias"
-import Contacto from "./pages/Contacto"
-import Admin from "./pages/Admin"
+import Noticias from "./pages/noticias"
+import Contacto from "./pages/contacto"
+import Admin from "./pages/admin"
 
 function App() {
   return (
