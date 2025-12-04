@@ -1,4 +1,5 @@
 export default function Contacto() {
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=matii.toorres.06@gmail.com&su=Consulta%20o%20Donaci%C3%B3n%20-%20Grupo%20L%C3%A1zaro"
   return (
     <section className="py-48 text-center px-6 bg-green-50">
       <h2 className="text-7xl md:text-9xl font-bold text-green-700 mb-20">Contacto • Donar</h2>

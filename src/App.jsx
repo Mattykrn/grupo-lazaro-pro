@@ -1,25 +1,26 @@
-import Inicio from "./pages/inicio"
-import { Routes, Route } from "react-router-dom"
-import Layout from "./components/Layout"
-import Testimonios from "./pages/testimonios"
-import Apoyo from "./pages/Apoyo"
-import Noticias from "./pages/noticias"
-import Contacto from "./pages/contacto"
-import Admin from "./pages/admin"
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Inicio from "./pages/Inicio";
+import Testimonios from "./pages/Testimonios";
+import Apoyo from "./pages/Apoyo";
+import Noticias from "./pages/Noticias";
+import Contacto from "./pages/Contacto";
+import Admin from "./pages/Admin";
+import Layout from "./components/Layout";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Inicio />} />
-        <Route path="testimonios" element={<Testimonios />} />
-        <Route path="apoyo" element={<Apoyo />} />
-        <Route path="noticias" element={<Noticias />} />
-        <Route path="contacto" element={<Contacto />} />
-        <Route path="admin-lazaro-2025" element={<Admin />} />
-      </Route>
-    </Routes>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout><Inicio /></Layout>} />
+        <Route path="/testimonios" element={<Layout><Testimonios /></Layout>} />
+        <Route path="/apoyo" element={<Layout><Apoyo /></Layout>} />
+        <Route path="/noticias" element={<Layout><Noticias /></Layout>} />
+        <Route path="/contacto" element={<Layout><Contacto /></Layout>} />
+        <Route path="/admin-lazaro-2025" element={<Admin />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
